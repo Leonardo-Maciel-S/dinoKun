@@ -1,0 +1,101 @@
+.cover_container {
+    background-color: #FF1E5D;
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    overflow: hidden;
+}
+
+.cover_div {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.cover_container h1 {
+    color: white;
+    font-weight: 900;
+    font-size: 96px;
+    line-height: 91.2px;
+    text-align: center;
+
+    max-width: 700px;
+}
+
+.cover_container p {
+    height: 25px;
+
+    font-size: 24px;
+    line-height: 25.2px;
+    text-align: center;
+    color: white;
+    font-weight: 400;
+}
+
+
+.cover_container button {
+    font-size: 36px;
+    line-height: 37.8px;
+    
+}
+
+.dinoKun_cover {
+
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+
+    overflow: hidden;
+
+}
+
+.dinoKun_cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* attributes */
+
+.attributes_container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 540px;
+}
+
+.attributes_card {
+    display: flex;
+    gap: 15px;
+    width: 340px;
+}
+
+.attributes_card h2 {
+    font-size: 32px;
+    line-height: 33.6px;
+}
+
+.attributes_card p {
+    width: fit-content;
+    max-width: 217px;
+    font-size: 20px;
+    line-height: 21px;
+    font-weight: 400;
+}
+
+.attributes_text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Gallery */
+
