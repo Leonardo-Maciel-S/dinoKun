@@ -1,101 +1,214 @@
-.cover_container {
-    background-color: #FF1E5D;
+    .cover_container {
+        background-color: #FF1E5D;
+        width: 100vw;
+        height: 100vh;
+
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+
+        overflow: hidden;
+
+        position: relative;
+    }
+
+    .cover_div {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .cover_container h1 {
+        color: white;
+        font-weight: 900;
+        font-size: 96px;
+        line-height: 91.2px;
+        text-align: center;
+
+        max-width: 700px;
+    }
+
+    .cover_container p {
+        height: 25px;
+
+        font-size: 24px;
+        line-height: 25.2px;
+        text-align: center;
+        color: white;
+        font-weight: 400;
+    }
+
+
+    .cover_container button {
+        font-size: 36px;
+        line-height: 37.8px;
+        
+    }
+
+    .dinoKun_cover {
+        width: 600px;
+        height: 600px;
+        position: absolute;
+        right: -120px;
+        bottom: -100px;
+
+        overflow: hidden;
+
+        z-index: 0;
+
+    }
+
+    .dinoKun_cover img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        overflow: hidden;
+
+    }
+
+    /* attributes */
+
+    .attributes_container {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 540px;
+        z-index: 1;
+        background-color: #F1F1F1;
+
+    }
+
+    .attributes_card {
+        display: flex;
+        gap: 15px;
+        width: 340px;
+    }
+
+    .attributes_card h2 {
+        font-size: 32px;
+        line-height: 33.6px;
+    }
+
+    .attributes_card p {
+        width: fit-content;
+        max-width: 217px;
+        font-size: 20px;
+        line-height: 21px;
+        font-weight: 400;
+    }
+
+    .attributes_text {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* Gallery */
+
+
+    .gallery_container {
+        background-color: #FFFFFF;
+        
+        width: 100vw;
+        min-height: 100vh;
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+
+    }
+
+    .gallery_text_container {
+        background-color: #9FFF98;
+
+        width: 593px;
+        height: 814px;
+        
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .gallery_text {
+        background-color: #9FFF98;
+
+        width: 70%;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        gap: 30px;
+        
+    }
+
+    .gallery_text_container h2 {
+        font-size: 64px;
+        line-height: 67.2px;
+    }
+
+    .gallery_text_container button {
+        background-color: #FF1E5D;
+        color: white;
+        font-size: 32px;
+        line-height: 33.6px;
+    }
+
+    .gallery_img_container {
+        display: flex;
+        flex-flow: column wrap;
+
+
+        width: 588px;
+        height: 814px;
+    }
+
+    .gallery_img1 img {
+        object-fit: fill;
+        
+    }
+
+
+    .gallery_img2 {
+        grid-area: img2;
+    }
+
+/* emoji */
+
+.emoji_container {
+    background-color: #F1F1F1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/* questions */
+
+.questions_container {
     width: 100vw;
     height: 100vh;
+    background-color: #FF1E5D;
 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.questions_text {
     display: flex;
-    flex-flow: column wrap;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    background-color: white;
 
-    overflow: hidden;
 }
 
-.cover_div {
+.questions_img{
     display: flex;
-    flex-flow: column wrap;
     justify-content: center;
     align-items: center;
-    gap: 30px;
-}
-
-.cover_container h1 {
-    color: white;
-    font-weight: 900;
-    font-size: 96px;
-    line-height: 91.2px;
-    text-align: center;
-
-    max-width: 700px;
-}
-
-.cover_container p {
-    height: 25px;
-
-    font-size: 24px;
-    line-height: 25.2px;
-    text-align: center;
-    color: white;
-    font-weight: 400;
-}
-
-
-.cover_container button {
-    font-size: 36px;
-    line-height: 37.8px;
     
 }
-
-.dinoKun_cover {
-
-    position: absolute;
-    right: 0px;
-    bottom: 0px;
-
-    overflow: hidden;
-
-}
-
-.dinoKun_cover img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-}
-
-/* attributes */
-
-.attributes_container {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 540px;
-}
-
-.attributes_card {
-    display: flex;
-    gap: 15px;
-    width: 340px;
-}
-
-.attributes_card h2 {
-    font-size: 32px;
-    line-height: 33.6px;
-}
-
-.attributes_card p {
-    width: fit-content;
-    max-width: 217px;
-    font-size: 20px;
-    line-height: 21px;
-    font-weight: 400;
-}
-
-.attributes_text {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-/* Gallery */
-
