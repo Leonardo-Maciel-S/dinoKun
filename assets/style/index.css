@@ -42,3 +42,19 @@ button {
     cursor: pointer;
 
 }
+
+.bg-img {
+    object-fit: fill;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0.3;
+}
+
+.bg-img-cover {
+    object-fit: fill;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    opacity: 1;
+}

@@ -1,5 +1,6 @@
 .cover_container {
     background-color: #FF1E5D;
+
     width: 100vw;
     height: 100vh;
 
@@ -12,6 +13,12 @@
     overflow: hidden;
 
     position: relative;
+    
+
+}
+
+.cover_div, .dinoKun_cover {
+    z-index: 10;
 }
 
 .cover_div {
@@ -20,6 +27,12 @@
     justify-content: center;
     align-items: center;
     gap: 30px;
+
+    background-color: #FF1E5D;
+    border-radius: 50%;
+    z-index: 0;
+
+    padding: 50px;
 }
 
 .cover_container h1 {
@@ -67,6 +80,7 @@
     height: 100%;
     object-fit: contain;
     overflow: hidden;
+    z-index: 20;
 
 }
 
@@ -262,6 +276,111 @@
     width: 100%;
 }
 
+/* adopt */
 
-.btn_questions img {
+.adopt_container {
+    background-color: #9FFF98;
+    /* background: linear-gradient(to right, #9FFF98, #70be6b); */
+
+    width: 100vw;
+    height: 100vh;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 20;
+}
+
+
+.adopt_container > div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 50px;
+    align-items: center;
+    justify-content: center;
+
+    height: 90%;
+    width: 1100px;
+
+    z-index: 10;
+}
+
+
+.adopt_text {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+
+}
+
+.adopt_text h2 {
+    font-size: 96px;
+    line-height: 91.2px;
+    width: min-content;
+
+}
+
+.btn_adopt {
+    background-color: #FF1E5D;
+    color: white;
+    box-shadow: 0px 8px 12.2px 1px #76A7CF40;
+    font-size: 36px;
+    line-height: 37.8px;
+    position: relative;
+
+}
+
+.adopt_img {
+
+    position: relative;
+
+    height: 100%;
+    min-width: 500px;
+    
+}
+
+.adopt_img .img1 {
+    width: 450px;
+    height: 450px;
+    
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+    
+.adopt_img .img2 {
+    width: 450px;
+    height: 450px;
+
+    position: absolute;
+    bottom: 50px;
+    left: -100px;
+
+}
+
+/* footer */
+
+footer {
+    background-color: #9FFF98;
+    
+    display: flex;
+    justify-content: end;
+    gap: 50px;
+
+    padding: 0 20px;
+
+    font-size: 16px;
+    font-weight: 400;
+}
+
+a, a:visited, a:active {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    font-weight: 600;
 }
