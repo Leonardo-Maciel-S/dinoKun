@@ -221,6 +221,16 @@
 
     display: grid;
     grid-template-columns: 1fr 1fr;
+
+}
+
+.question_div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    transition: all 1s linear ease-in;
+
 }
 
 .questions_text {
@@ -239,6 +249,42 @@
     font-size: 64px;
     line-height: 67.2px;
     text-align: center;
+}
+
+.questions_description {
+    max-width: 450px;
+    text-align: justify;
+    background-color: #F4F4F4; 
+    display: none;
+
+    font-size: 20px;
+    line-height: 21px;
+    font-weight: 400;
+    overflow: hidden;
+    overflow-y: auto;
+
+}
+
+.animation_descrition {
+    display: block;
+    padding: 20px 30px;
+    height: auto;
+    max-height: 150px;
+    transition: all 1s linear ease-in;
+    animation: openQuestions 1s linear 1s ease-in;
+}
+
+@keyframes openQuestions {
+    0% {
+        padding: 0;
+        height: 0;
+        display: block;
+
+    } 100% {
+        padding: 20px 30px;
+        height: auto;
+        max-height: 150px;
+    }
 }
 
 .btn_questions_container {

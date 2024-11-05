@@ -86,29 +86,54 @@
             <h2>Perguntas frequentes</h2>
 
             <div class="btn_questions_container">
-                <button type="button" class="btn_questions">
-                    <div>
-                        <img src="assets/img/dinoIcon.svg" alt="icon de dinossauro">
+                <div class="question_div">
+                    <button type="button" class="btn_questions" onclick="openDescription('question1')">
+                        <div>
+                            <img src="assets/img/dinoIcon.svg" alt="icon de dinossauro">
+                        </div>
+
+                        <span>Quantos Bichinhos disponiveis?</span>
+                    </button>
+
+                    <div id="question1" class="questions_description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, consequatur praesentium!
+                        Repellat nesciunt rem dicta cupiditate quas. Nesciunt et dolorum ipsum adipisci, ea recusandae
+                        iure nemo nihil reprehenderit laboriosam est.
+                    </div>
+                </div>
+
+                <div class="question_div">
+                    <button type="button" class="btn_questions" onclick="openDescription('question2')">
+                        <div>
+                            <img src="assets/img/bateriaIcon.svg" alt="icon de bateria">
+                        </div>
+
+                        <span>Quanto tempo dura a bateria?</span>
+                    </button>
+
+                    <div id="question2" class="questions_description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, consequatur praesentium!
+                        Repellat nesciunt rem dicta cupiditate quas. Nesciunt et dolorum ipsum adipisci, ea recusandae
+                        iure nemo nihil reprehenderit laboriosam est.
+                    </div>
+                </div>
+
+                <div class="question_div">
+                    <button type="button" class="btn_questions" onclick="openDescription('question3')">
+                        <div>
+                            <img src="assets/img/caveiraIcon.svg" alt="icon de caveira">
+                        </div>
+
+                        <span>O meu bichinho pode morrer?</span>
+                    </button>
+
+                    <div id="question3" class="questions_description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, consequatur praesentium!
+                        Repellat nesciunt rem dicta cupiditate quas. Nesciunt et dolorum ipsum adipisci, ea recusandae
+                        iure nemo nihil reprehenderit laboriosam est.
                     </div>
 
-                    <span>Quantos Bichinhos disponiveis?</span>
-                </button>
-
-                <button type="button" class="btn_questions">
-                    <div>
-                        <img src="assets/img/bateriaIcon.svg" alt="icon de bateria">
-                    </div>
-
-                    <span>Quanto tempo dura a bateria?</span>
-                </button>
-
-                <button type="button" class="btn_questions">
-                    <div>
-                        <img src="assets/img/caveiraIcon.svg" alt="icon de caveira">
-                    </div>
-
-                    <span>O meu bichinho pode morrer?</span>
-                </button>
+                </div>
 
             </div>
         </div>
@@ -145,5 +170,32 @@
                 target="_blank">@Leonardo-maciel-s</a></span>
     </footer>
 </body>
+
+<script>
+    let lastQuestionID = ''
+
+    const openDescription = id => {
+        const divQuestion = document.querySelector(`#${id}`)
+        console.log(lastQuestionID)
+
+        if (!lastQuestionID) {
+            divQuestion.classList.toggle('animation_descrition')
+
+            lastQuestionID = id
+            return
+        }
+
+        const divLastQuestion = document.querySelector(`#${lastQuestionID}`)
+        divLastQuestion.classList.toogle('animation_descrition')
+
+        divQuestion.classList.toggle('animation_descrition')
+
+        lastQuestionID = id
+
+        console.log(lastQuestionID)
+    }
+
+
+</script>
 
 </html>
