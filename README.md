@@ -6,5 +6,5 @@
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 
 ### Link deploy
-- <a href="https://leonardo-maciel-s.github.io/dinoKun/">Site</a>
+- <a href="https://leonardo-maciel-s.github.io/dinoKun/" target="_blank">Site</a>
  
