@@ -263,16 +263,16 @@
     overflow: hidden;
     overflow-y: auto;
 
+    transition: all 1s linear ease-in;
+
 }
 
-.animation_descrition {
+.animation_descrition_open {
     display: block;
-    padding: 20px 30px;
-    height: auto;
-    max-height: 150px;
-    transition: all 1s linear ease-in;
     animation: openQuestions 1s linear 1s ease-in;
 }
+
+
 
 @keyframes openQuestions {
     0% {
@@ -282,10 +282,13 @@
 
     } 100% {
         padding: 20px 30px;
-        height: auto;
+        height: 150px;
         max-height: 150px;
+        display: block;
+
     }
 }
+
 
 .btn_questions_container {
     display: flex;
@@ -392,7 +395,7 @@
     height: 450px;
     
     position: absolute;
-    top: 0px;
+    top: 20px;
     right: 0px;
 }
     
@@ -401,7 +404,7 @@
     height: 450px;
 
     position: absolute;
-    bottom: 50px;
+    bottom: 10px;
     left: -100px;
 
 }

@@ -167,7 +167,7 @@
     <footer>
         <span>design by <a href="https://www.behance.net/fariasedu" target="_blank">@farinhasedu</a></span>
         <span>developed by <a href="https://www.linkedin.com/in/leonardo-maciel-s/"
-                target="_blank">@Leonardo-maciel-s</a></span>
+                target="_blank">@Leonardo-Maciel-S</a></span>
     </footer>
 </body>
 
@@ -176,23 +176,23 @@
 
     const openDescription = id => {
         const divQuestion = document.querySelector(`#${id}`)
-        console.log(lastQuestionID)
+       
+        if (id === lastQuestionID) {
+            divQuestion.classList.toggle('animation_descrition_open')
+            return
+        }
 
         if (!lastQuestionID) {
-            divQuestion.classList.toggle('animation_descrition')
-
+            divQuestion.classList.toggle('animation_descrition_open')
             lastQuestionID = id
             return
         }
 
         const divLastQuestion = document.querySelector(`#${lastQuestionID}`)
-        divLastQuestion.classList.toogle('animation_descrition')
-
-        divQuestion.classList.toggle('animation_descrition')
+        divLastQuestion.classList.remove('animation_descrition_open')
+        divQuestion.classList.add('animation_descrition_open')
 
         lastQuestionID = id
-
-        console.log(lastQuestionID)
     }
 
 
