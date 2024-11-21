@@ -1,0 +1,311 @@
+
+@media (width < 400px) {
+  /* cover ------------------- */
+
+  .cover_container button {
+    font-size: 1rem;
+    width: 200px;
+    height: 50px;
+  }
+
+  .cover_div {
+    margin-bottom: 200px;
+  }
+
+  .cover_container h1 {
+    font-size: 2rem;
+    line-height: 60px;
+  }
+
+  .cover_container p {
+      height: 25px;
+
+      font-size: 20px;
+      line-height: 25.2px;
+      margin-bottom: 20px;
+  }
+
+  .dinoKun_cover {
+    width: 300px;
+    height: 300px;
+    right: -70px;
+    bottom: -40px;
+  }
+
+  /* attributes ------------------- */
+
+  .attributes_container {
+    padding: 30px 0;
+    flex-wrap: wrap;
+    align-items: center;
+
+  } 
+
+  .attributes_card h2 {
+    font-size: 22px;
+    line-height: 26px;
+  }
+
+  .attributes_card p {
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 400;
+  }
+
+  .attributes_card img {
+    width: 100px;
+    height: 100px;
+  }
+
+  /* gallery ------------- */
+
+  /* emoji ------------- */
+
+  .emoji_container {
+    max-height: 200px;
+    max-width: 100vw;
+  }
+
+  /* questions ------------- */
+
+  .questions_container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr .5fr;
+
+  }
+
+  .btn_questions {
+    gap: 0px;
+    
+  }
+
+  .questions_text {
+    width: 100vw;
+    margin-bottom: 50px;
+  }
+
+  .questions_text h2 {
+      width: auto;
+      font-size: 50px;
+      line-height: 54px;
+  }
+
+  .questions_text span {
+    line-height: 18px;
+    font-size: 16px;
+    font-weight: 800;
+    text-align: center;
+}
+
+  .questions_description {
+      max-width: 450px;
+      text-align: justify;
+      background-color: #F4F4F4; 
+      display: none;
+
+      font-size: 20px;
+      line-height: 21px;
+      font-weight: 400;
+      overflow: hidden;
+      overflow-y: auto;
+
+      transition: all 1s linear ease-in;
+  }
+
+
+}
+
+@media (400px < width < 900px)  {
+
+  /* cover ------------------- */
+    .cover_div {
+      margin-bottom: 100px;
+  }
+
+    .dinoKun_cover {
+      width: 550px;
+      height: 550px;
+
+      right: -150px;
+      bottom: -100px;
+  }
+
+  /* attribute ---------- */
+
+  .attributes_card {
+      flex-direction: column;
+      align-items: center;
+      justify-content: start;
+  }
+
+  .attributes_card img {
+    width: 150px;
+    height: 150px;
+  }
+
+  /* gallery ---------- */
+
+  .gallery_container {
+    padding: 20px 0px;
+  }
+
+
+  .gallery_img_container {
+    height: 90vh;
+    overflow-x: hidden;
+  }
+
+  .gallery_text_container {
+    background-color: #9FFF98;
+
+    width: 600px;
+    height: 90vh;
+    
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+
+  }
+
+
+  .gallery_img1 {
+      display: flex;
+      width: 200px;
+  }
+
+  .gallery_img2 {
+      display: flex;
+      width: 200px;
+      
+  }
+
+  .gallery_img img {
+      display: block;
+      height: 100%;
+      object-fit: cover;
+
+  }
+
+
+  /* questions ------------------- */
+
+  .questions_container {
+    width: 100vw;
+    min-height: 100vh;
+
+    display: grid;
+    grid-template-rows: 1fr .5fr;
+    grid-template-columns: 1fr;
+
+    
+  }
+
+  /* adopt ------------------- */
+
+  .adopt_container > div{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 100px;
+    align-items: center;
+    justify-content: center;
+
+    height: 90%;
+
+    z-index: 10;
+  
+  }
+
+
+  .adopt_img .img1 {
+    width: 350px;
+    height: 350px;
+    
+    top: 0px;
+    right: -100px;
+  }
+    
+  .adopt_img .img2 {
+    width: 350px;
+    height: 350px;
+
+    bottom: -20px;
+    left: -100px;
+
+  }
+}
+
+@media (900px < width <= 1280px) {
+
+
+  /* cover ----------- */
+    
+  .dinoKun_cover {
+    width: 550px;
+    height: 550px;
+
+    right: -120px;
+    bottom: -100px;
+
+    z-index: 0;
+
+  }
+
+  /* gallery ---------- */
+
+  .gallery_container {
+    padding: 20px 0px;
+  }
+
+
+  .gallery_img_container {
+
+    height: 90vh;
+    overflow-x: hidden;
+
+}
+
+.gallery_img1 {
+    display: flex;
+    height: 55%;
+}
+
+.gallery_img2 {
+    display: flex;
+    height: 40%;
+    
+}
+
+.gallery_img img {
+    display: block;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+
+
+  /* adopt ----------- */
+  .adopt_img .img1 {
+    width: 400px;
+    height: 400px;
+    
+    position: absolute;
+    top: 50px;
+    left: 100px;
+  }
+    
+  .adopt_img .img2 {
+    width: 400px;
+    height: 400px;
+
+    position: absolute;
+    bottom: -10px;
+    right: 80px;
+
+  }
+}

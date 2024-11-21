@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/style/index.css">
     <link rel="stylesheet" href="assets/style/main.css">
+    <link rel="stylesheet" href="assets/style/media.css">
 
     <link rel="shortcut icon" href="assets/img/dinologo.svg" type="image/x-icon">
     <title>DinoKun</title>
@@ -13,7 +14,7 @@
 
 <body>
     <section class="cover_container">
-        <img class="bg-img" src="assets/img/meusOvos.png" alt="">
+        <img width="100%" height="100%" class="bg-img" src="assets/img/meusOvos.png" alt="">
 
         <div class="cover_div">
             <img src="assets/img/logo.svg" alt="logo">
@@ -23,7 +24,7 @@
         </div>
 
         <div class="dinoKun_cover">
-            <img src="assets/img/dinoCover.png" alt="dinokun grande">
+            <img width="100%" height="100%" src="assets/img/dinoCover.png" alt="dinokun grande">
         </div>
     </section>
 
@@ -57,7 +58,7 @@
         <div class="gallery_text_container">
             <div class="gallery_text">
                 <div>
-                    <img src="assets/img/logoOvo.svg" alt="">
+                    <img width="100%" height="100%" src="assets/img/logoOvo.svg" alt="">
                 </div>
 
                 <h2>Um amigo sempre ao seu lado</h2>
@@ -89,7 +90,7 @@
                 <div class="question_div">
                     <button type="button" class="btn_questions" onclick="openDescription('question1')">
                         <div>
-                            <img src="assets/img/dinoIcon.svg" alt="icon de dinossauro">
+                            <img width="100%" height="100%" src="assets/img/dinoIcon.svg" alt="icon de dinossauro">
                         </div>
 
                         <span>Quantos Bichinhos disponiveis?</span>
@@ -105,7 +106,7 @@
                 <div class="question_div">
                     <button type="button" class="btn_questions" onclick="openDescription('question2')">
                         <div>
-                            <img src="assets/img/bateriaIcon.svg" alt="icon de bateria">
+                            <img width="100%" height="100%" src="assets/img/bateriaIcon.svg" alt="icon de bateria">
                         </div>
 
                         <span>Quanto tempo dura a bateria?</span>
@@ -121,7 +122,7 @@
                 <div class="question_div">
                     <button type="button" class="btn_questions" onclick="openDescription('question3')">
                         <div>
-                            <img src="assets/img/caveiraIcon.svg" alt="icon de caveira">
+                            <img width="100%" height="100%" src="assets/img/caveiraIcon.svg" alt="icon de caveira">
                         </div>
 
                         <span>O meu bichinho pode morrer?</span>
@@ -144,7 +145,7 @@
     </section>
 
     <section class="adopt_container">
-        <img class="bg-img-cover" src="assets/img/meusOvos.png" alt="">
+        <img width="100%" height="100%" class="bg-img-cover" src="assets/img/meusOvos.png" alt="">
 
         <div>
             <div class="adopt_text">
@@ -156,9 +157,13 @@
             </div>
 
             <div class="adopt_img">
-                <img class="img1" src="assets/img/adoptImg1.svg" alt="">
+                <div class="img1">
+                    <img width="100%" height="100%" src="assets/img/adoptImg1.svg" alt="">
+                </div>
 
-                <img class="img2" src="assets/img/adoptImg2.svg" alt="">
+                <div class="img2">
+                    <img width="100%" height="100%" src="assets/img/adoptImg2.svg" alt="">
+                </div>
             </div>
 
         </div>
@@ -187,6 +192,8 @@
             lastQuestionID = id
             return
         }
+
+
 
         const divLastQuestion = document.querySelector(`#${lastQuestionID}`)
         divLastQuestion.classList.remove('animation_descrition_open')

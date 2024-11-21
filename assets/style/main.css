@@ -2,7 +2,8 @@
     background-color: #FF1E5D;
 
     width: 100vw;
-    height: 100vh;
+    max-height: 100vh;
+    min-height: 100vh;
 
     display: flex;
     flex-flow: column wrap;
@@ -11,9 +12,7 @@
     gap: 30px;
 
     overflow: hidden;
-
     position: relative;
-    
 
 }
 
@@ -58,16 +57,15 @@
 
 .cover_container button {
     font-size: 36px;
-    line-height: 37.8px;
-    
+    line-height: 37.8px;  
 }
 
 .dinoKun_cover {
     width: 600px;
     height: 600px;
     position: absolute;
-    right: -120px;
-    bottom: -100px;
+    right: -130px;
+    bottom: -150px;
 
     overflow: hidden;
 
@@ -90,9 +88,10 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    height: 540px;
+    height: 500px;
     z-index: 1;
     background-color: #F1F1F1;
+    overflow-x: hidden; 
 
 }
 
@@ -134,21 +133,21 @@
     justify-content: center;
     align-items: center;
     gap: 20px;
-
-
-
+    overflow-x: hidden;
 }
 
 .gallery_text_container {
     background-color: #9FFF98;
 
     width: 593px;
-    height: 814px;
+    height: 90vh;
     
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
+    overflow-x: hidden;
+
 }
 
 .gallery_text {
@@ -180,7 +179,8 @@
     justify-content: space-between;
     gap: 12px;
 
-    height: 814px;
+    height: 90vh;
+    overflow-x: hidden;
 
 }
 
@@ -209,6 +209,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 600px;
+    max-width: 100vw;
+}
+
+.emoji_container img {
+    width: 100%;
+    height: 400px;
+    max-height: 400px;
 
 }
 
@@ -216,32 +224,30 @@
 
 .questions_container {
     width: 100vw;
-    height: 100vh;
-    background-color: #FF1E5D;
+    min-height: 100vh;
+    overflow-x: hidden;
 
     display: grid;
     grid-template-columns: 1fr 1fr;
-
 }
 
 .question_div {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
     transition: all 1s linear ease-in;
 
 }
 
 .questions_text {
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column;
     justify-content: center;
     align-items: center;
     background-color: white;
-
+    height: 100%;
+    padding: 20px;
     gap: 50px;
-
 }
 
 .questions_text h2 {
@@ -264,11 +270,7 @@
     overflow-y: auto;
 
     transition: all 1s linear ease-in;
-
 }
-
-
-
 
 .animation_descrition_open {
     display: block;
@@ -277,8 +279,6 @@
 
     animation: openQuestions 1s linear 1s ease-in;
 }
-
-
 
 @keyframes openQuestions {
     0% {
@@ -306,6 +306,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #FF1E5D;
+
     
 }
 
@@ -339,6 +341,8 @@
 
     width: 100vw;
     height: 100vh;
+    overflow-x: hidden;
+
     
     display: flex;
     align-items: center;
@@ -350,14 +354,14 @@
 .adopt_container > div{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 50px;
+    column-gap: 100px;
     align-items: center;
     justify-content: center;
 
     height: 90%;
-    width: 1100px;
 
     z-index: 10;
+
 }
 
 
@@ -390,28 +394,26 @@
 .adopt_img {
 
     position: relative;
-
     height: 100%;
-    min-width: 500px;
     
 }
 
 .adopt_img .img1 {
-    width: 450px;
-    height: 450px;
+    width: 400px;
+    height: 400px;
     
     position: absolute;
-    top: 20px;
-    right: 0px;
+    top: 50px;
+    left: 100px;
 }
     
 .adopt_img .img2 {
-    width: 450px;
-    height: 450px;
+    width: 400px;
+    height: 400px;
 
     position: absolute;
-    bottom: 10px;
-    left: -100px;
+    bottom: 80px;
+    right: 80px;
 
 }
 
