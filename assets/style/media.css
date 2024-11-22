@@ -65,6 +65,7 @@
     
     width: 100vw;
     height: 300px;
+    padding: 20px;
 
     display: flex;
     flex-direction: column-reverse;
@@ -103,7 +104,6 @@
     flex-flow: column;
     justify-content: center;
     gap: 15px;
-    padding: 20px 20px 0 20px;
   
     min-height: 300px;
     width: 100%;
@@ -340,7 +340,6 @@
 
   .gallery_text_container {
     background-color: #9FFF98;
-    border-end-end-radius: 1px solid red;
 
     width: 100%;
     height: 400px;
